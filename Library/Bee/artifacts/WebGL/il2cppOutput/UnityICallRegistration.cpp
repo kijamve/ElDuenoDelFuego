@@ -786,6 +786,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GameObject_GetComponentsInternal();
 		Register_UnityEngine_GameObject_GetComponentsInternal();
 
+		//System.Boolean UnityEngine.GameObject::get_active()
+		void Register_UnityEngine_GameObject_get_active();
+		Register_UnityEngine_GameObject_get_active();
+
 		//System.Boolean UnityEngine.GameObject::get_activeInHierarchy()
 		void Register_UnityEngine_GameObject_get_activeInHierarchy();
 		Register_UnityEngine_GameObject_get_activeInHierarchy();

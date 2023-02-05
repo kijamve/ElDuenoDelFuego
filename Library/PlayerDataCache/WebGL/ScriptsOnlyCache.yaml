@@ -24,6 +24,7 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateMachineNode
     - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
@@ -703,7 +704,7 @@ ScriptsOnlyBuild:
     className: FlyCamera
   - hash:
       serializedVersion: 2
-      Hash: 46036b9709271dd99769b41a6a8f7c20
+      Hash: 24e3b47775f2a5db1aaeac157794291a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FlyPlayer
@@ -769,7 +770,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 4a61d23de66a86d141d6cec07e99705a
+      Hash: 85bdee40eabb864fb663ed03f3ddce14
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FireCollider
@@ -1015,7 +1016,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: f02b0f32826431a5a0a60f310faee42a
+      Hash: 042444a0bbf12a1d456da2a0064a1fc9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyPlayer
