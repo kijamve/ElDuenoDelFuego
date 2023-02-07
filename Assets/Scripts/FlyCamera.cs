@@ -19,7 +19,14 @@ public class FlyCamera : MonoBehaviour
     public FlyPlayer playerTucusito; 
     private Rigidbody body;
 
-	Vector3 velocity; // current velocity
+    private Vector3 lastTouchPosition = Vector3.zero;
+    private bool touchLeft = false;
+    private bool touchRight = false;
+    private bool touchUp = false;
+    private bool touchDown = false;
+    private bool isFirstTouch = true;
+
+Vector3 velocity; // current velocity
     void Start()
     {
         body = GetComponent<Rigidbody>();
@@ -137,22 +144,114 @@ public class FlyCamera : MonoBehaviour
 
 	Vector3 GetAccelerationVector() {
 		Vector3 moveInput = default;
+        bool fromTouch = false;
 
 		void AddMovement( KeyCode key, Vector3 dir ) {
 			if( Input.GetKey( key ) )
 				moveInput += dir;
-		}
+        }
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+
+            // Move the cube if the screen has the finger moving.
+            if (touch.phase == TouchPhase.Moved || !isFirstTouch && touch.phase == TouchPhase.Stationary)
+            {
+                if (isFirstTouch)
+                {
+                    lastTouchPosition = touch.position;
+                    isFirstTouch = false;
+                }
+                else
+                {
+                    fromTouch = true;
+                    if (touch.phase == TouchPhase.Stationary)
+                    {
+                        if (touchRight)
+                        {
+                            moveInput += Vector3.right;
+                        }
+                        else if (touchLeft)
+                        {
+                            moveInput += Vector3.left;
+                        }
+                        /*if (touchUp)
+                        {
+                            moveInput += Vector3.up;
+                        }
+                        else if (touchDown)
+                        {
+                            moveInput += Vector3.down;
+                        }*/
+                    } else
+                    { 
+                        if (lastTouchPosition.x < touch.position.x)
+                        {
+                            moveInput += Vector3.right;
+                            touchLeft = false;
+                            touchRight = true;
+                        }
+                        else if (lastTouchPosition.x > touch.position.x)
+                        {
+                            moveInput += Vector3.left;
+                            touchLeft = true;
+                            touchRight = false;
+                        } else
+                        {
+                            touchLeft = false;
+                            touchRight = false;
+                        }
+                        if (lastTouchPosition.y < touch.position.y)
+                        {
+                            moveInput += Vector3.up;
+                            touchUp = true;
+                            touchDown = false;
+                        }
+                        else if (lastTouchPosition.y > touch.position.y)
+                        {
+                            moveInput += Vector3.down;
+                            touchUp = false;
+                            touchDown = true;
+                        }
+                        else
+                        {
+                            touchUp = false;
+                            touchDown = false;
+                        }
+                    }
+                    lastTouchPosition = touch.position;
+                }
+            }
+            else
+            {
+                isFirstTouch = true;
+                touchLeft = false;
+                touchRight = false;
+                touchUp = false;
+                touchDown = false;
+            }
+            
+
+        }
 
         //AddMovement( KeyCode.W, Vector3.forward );
         //AddMovement( KeyCode.S, Vector3.back );
         AddMovement( KeyCode.W, Vector3.up );
+        AddMovement(KeyCode.UpArrow, Vector3.up);
         AddMovement( KeyCode.S, Vector3.down );
-        AddMovement( KeyCode.D, Vector3.right );
-		AddMovement( KeyCode.A, Vector3.left );
-		//AddMovement( KeyCode.Space, Vector3.up );
-		//AddMovement( KeyCode.LeftControl, Vector3.down );
-		Vector3 direction = moveInput.normalized; //transform.TransformVector( moveInput.normalized );
+        AddMovement(KeyCode.DownArrow, Vector3.down);
+        AddMovement(KeyCode.D, Vector3.right );
+        AddMovement(KeyCode.RightArrow, Vector3.right);
+        AddMovement(KeyCode.A, Vector3.left);
+        AddMovement(KeyCode.LeftArrow, Vector3.left);
+        //AddMovement( KeyCode.Space, Vector3.up );
+        //AddMovement( KeyCode.LeftControl, Vector3.down );
+        Vector3 direction = moveInput.normalized; //transform.TransformVector( moveInput.normalized );
 
+        if (fromTouch)
+        {
+            direction = new Vector3(direction.x, direction.y * 0.5f, direction.z);
+        }
 
         return direction * ( acceleration * accSprintMultiplier * speedPlayerRatio); // "sprinting"
     }

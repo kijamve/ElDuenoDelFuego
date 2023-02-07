@@ -26,6 +26,9 @@ public class FlyPlayer : MonoBehaviour
     public bool inAttack = false;
     public Animator animator;
     bool withRamita = false;
+    private int TapCount = 0;
+    private float tapTime = 0;
+    private float tapAttacTime = 0;
     void Start()
     {
         boxParent = transform.parent.gameObject;
@@ -125,7 +128,49 @@ public class FlyPlayer : MonoBehaviour
                 StartCoroutine(BackToMain());
             }
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        bool touchAttack = false;
+        bool stopTouchAttack = false;
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began)
+            {
+                Debug.Log("Time Touch TouchPhase.Began: " + Time.time);
+                TapCount += 1;
+            }
+            if (touch.phase == TouchPhase.Ended)
+            {
+                Debug.Log("Time Touch TouchPhase.Ended: " + Time.time);
+            }
+            if (touch.phase == TouchPhase.Canceled)
+            {
+                Debug.Log("Time Touch TouchPhase.Canceled: " + Time.time);
+            }
+            if (TapCount == 1)
+            {
+                Debug.Log("Time Touch: " + Time.time);
+                tapTime = Time.time + 0.75f;
+            }
+            else if (TapCount == 2 && Time.time <= tapTime)
+            {
+                Debug.Log("touchAttack");
+                touchAttack = true;
+                tapAttacTime = Time.time + 0.3f;
+                TapCount = 0;
+            }
+            if (tapTime > 0.01f && Time.time > tapTime)
+            {
+                Debug.Log("Time Ended: " + Time.time);
+                TapCount = 0;
+            }
+        }
+        if (tapAttacTime > 0.01f && tapAttacTime < Time.time && !touchAttack)
+        {
+            tapAttacTime = 0; 
+            stopTouchAttack = true;
+            Debug.Log("stopTouchAttack");
+        }
+        if (touchAttack || Input.GetKeyDown(KeyCode.Space))
         {
             float distance = Vector3.Distance(ramita.transform.position, gameObject.transform.position);
             Debug.Log("Distancia Ramita: " + distance);
@@ -145,7 +190,7 @@ public class FlyPlayer : MonoBehaviour
                 inAttack = true;
             }
         }
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (stopTouchAttack || Input.GetKeyUp(KeyCode.Space))
         {
             if (ramita.active)
             {

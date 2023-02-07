@@ -3160,7 +3160,7 @@ MonoBehaviour:
   animator: {fileID: 560103770}
   walkMinDistance: 0
   walkMaxDistance: 0
-  fireMinDistance: 12
+  fireMinDistance: 7
   fireMaxDistance: 20
   walkVelocity: 8
   audioPlayerDead: {fileID: 1907919531}

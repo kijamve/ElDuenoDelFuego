@@ -100,20 +100,20 @@ extern void FlyCamera_UpdateInput_m74F5EF5EA4FACAB0BDCCBEFA853BEED37F68AE08 (voi
 extern void FlyCamera_GetAccelerationVector_m4C33755E5AF6DF4B4ACA94B827C3F89397E803AA (void);
 // 0x0000002C System.Void FlyCamera::.ctor()
 extern void FlyCamera__ctor_mA8BB2240A203C34F7E1DF2B7C41AB8E047C2715B (void);
-// 0x0000002D System.Void FlyCamera::<GetAccelerationVector>g__AddMovement|23_0(UnityEngine.KeyCode,UnityEngine.Vector3,FlyCamera/<>c__DisplayClass23_0&)
-extern void FlyCamera_U3CGetAccelerationVectorU3Eg__AddMovementU7C23_0_m8265C52EC23B5C2728A6F533B0FB08A6B24E16C6 (void);
-// 0x0000002E System.Void FlyCamera/<BackToMain>d__19::.ctor(System.Int32)
-extern void U3CBackToMainU3Ed__19__ctor_m2DF72BEEA73988EC111EE61FDDEA4EA81B40FF36 (void);
-// 0x0000002F System.Void FlyCamera/<BackToMain>d__19::System.IDisposable.Dispose()
-extern void U3CBackToMainU3Ed__19_System_IDisposable_Dispose_mC41EA63921590D4C34DAD371D9AFA7F34B226FBE (void);
-// 0x00000030 System.Boolean FlyCamera/<BackToMain>d__19::MoveNext()
-extern void U3CBackToMainU3Ed__19_MoveNext_mFFA61E48E64C3183F141A5C7D50C9B797F33605B (void);
-// 0x00000031 System.Object FlyCamera/<BackToMain>d__19::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CBackToMainU3Ed__19_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF6DA906110359B2D549F9CD02D19C54EB2F13F11 (void);
-// 0x00000032 System.Void FlyCamera/<BackToMain>d__19::System.Collections.IEnumerator.Reset()
-extern void U3CBackToMainU3Ed__19_System_Collections_IEnumerator_Reset_mCE0102205971B2668E2AE99A13E1BF72E8838644 (void);
-// 0x00000033 System.Object FlyCamera/<BackToMain>d__19::System.Collections.IEnumerator.get_Current()
-extern void U3CBackToMainU3Ed__19_System_Collections_IEnumerator_get_Current_m4BB770327AD920712A1A9AB70F039D749AFA498A (void);
+// 0x0000002D System.Void FlyCamera::<GetAccelerationVector>g__AddMovement|29_0(UnityEngine.KeyCode,UnityEngine.Vector3,FlyCamera/<>c__DisplayClass29_0&)
+extern void FlyCamera_U3CGetAccelerationVectorU3Eg__AddMovementU7C29_0_mD4DEAF45D289415DC9C85BBDD1722247F191DA76 (void);
+// 0x0000002E System.Void FlyCamera/<BackToMain>d__25::.ctor(System.Int32)
+extern void U3CBackToMainU3Ed__25__ctor_mB9D15F3D452DC9670CE7A808CF49103163B9CB58 (void);
+// 0x0000002F System.Void FlyCamera/<BackToMain>d__25::System.IDisposable.Dispose()
+extern void U3CBackToMainU3Ed__25_System_IDisposable_Dispose_m4C821EF0604041755C85690E4985EAF9C220C582 (void);
+// 0x00000030 System.Boolean FlyCamera/<BackToMain>d__25::MoveNext()
+extern void U3CBackToMainU3Ed__25_MoveNext_mBC563F46B3B1EA48445CE0B2D6A9239EA6EE71BF (void);
+// 0x00000031 System.Object FlyCamera/<BackToMain>d__25::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CBackToMainU3Ed__25_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1703B0D91FF1022E0A370F1B112510CA7837AEC1 (void);
+// 0x00000032 System.Void FlyCamera/<BackToMain>d__25::System.Collections.IEnumerator.Reset()
+extern void U3CBackToMainU3Ed__25_System_Collections_IEnumerator_Reset_m3F36589A2B1D1F41A1E06F7F0423DA90A8B58E82 (void);
+// 0x00000033 System.Object FlyCamera/<BackToMain>d__25::System.Collections.IEnumerator.get_Current()
+extern void U3CBackToMainU3Ed__25_System_Collections_IEnumerator_get_Current_m45987FF6ACF6C1D129C2EF7137D57388FA633FFE (void);
 // 0x00000034 System.Void FlyPlayer::Start()
 extern void FlyPlayer_Start_m860B9BA04EEFC68DC70C08F3404B058A3B3B0AB1 (void);
 // 0x00000035 System.Collections.IEnumerator FlyPlayer::Rotate(UnityEngine.GameObject,UnityEngine.Quaternion,System.Single)
@@ -126,42 +126,42 @@ extern void FlyPlayer_BackToMain_mC2E0E0DB1C3B9973E6023DF671D30AA7EF3E6905 (void
 extern void FlyPlayer_Update_m948447CEE8532C64E3987B318AEF7025E92765B5 (void);
 // 0x00000039 System.Void FlyPlayer::.ctor()
 extern void FlyPlayer__ctor_mB806033498E9C6495E2DD0AAFF388A4488DE3123 (void);
-// 0x0000003A System.Void FlyPlayer/<Rotate>d__17::.ctor(System.Int32)
-extern void U3CRotateU3Ed__17__ctor_mDAF3F976B605CE7812DC8183125D18C6B07A07EA (void);
-// 0x0000003B System.Void FlyPlayer/<Rotate>d__17::System.IDisposable.Dispose()
-extern void U3CRotateU3Ed__17_System_IDisposable_Dispose_m4AD2DF82512DAB8AA97325C0B27037E59AC83CE4 (void);
-// 0x0000003C System.Boolean FlyPlayer/<Rotate>d__17::MoveNext()
-extern void U3CRotateU3Ed__17_MoveNext_m57039920FB251879A70D6BC65E3B235ECD147E02 (void);
-// 0x0000003D System.Object FlyPlayer/<Rotate>d__17::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CRotateU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m541A4595A90586C92CAFECDCC13663334C46581A (void);
-// 0x0000003E System.Void FlyPlayer/<Rotate>d__17::System.Collections.IEnumerator.Reset()
-extern void U3CRotateU3Ed__17_System_Collections_IEnumerator_Reset_mD60966C8F1889861B3D99E5289BF7827A33A0338 (void);
-// 0x0000003F System.Object FlyPlayer/<Rotate>d__17::System.Collections.IEnumerator.get_Current()
-extern void U3CRotateU3Ed__17_System_Collections_IEnumerator_get_Current_m0D8C44AB7B2DB77D6F712CBC429FEA0B3B2B8797 (void);
-// 0x00000040 System.Void FlyPlayer/<AtackBlend>d__18::.ctor(System.Int32)
-extern void U3CAtackBlendU3Ed__18__ctor_m4F2BF78C9651C2AE9A258756EDC5A7A133FCC398 (void);
-// 0x00000041 System.Void FlyPlayer/<AtackBlend>d__18::System.IDisposable.Dispose()
-extern void U3CAtackBlendU3Ed__18_System_IDisposable_Dispose_mDF955B3907CE008B39A0BF60ECC83105881440DE (void);
-// 0x00000042 System.Boolean FlyPlayer/<AtackBlend>d__18::MoveNext()
-extern void U3CAtackBlendU3Ed__18_MoveNext_m64E5F9E27BC70BB3481EFA5C18F0C6054FD098BC (void);
-// 0x00000043 System.Object FlyPlayer/<AtackBlend>d__18::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CAtackBlendU3Ed__18_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDF6446902DA808EE847DAFA21DDB8BFD5182631D (void);
-// 0x00000044 System.Void FlyPlayer/<AtackBlend>d__18::System.Collections.IEnumerator.Reset()
-extern void U3CAtackBlendU3Ed__18_System_Collections_IEnumerator_Reset_m306E1CABBEFCD4FF0F4F3ECE3E5A127264C12EBA (void);
-// 0x00000045 System.Object FlyPlayer/<AtackBlend>d__18::System.Collections.IEnumerator.get_Current()
-extern void U3CAtackBlendU3Ed__18_System_Collections_IEnumerator_get_Current_mBC5E84D9CF5AA765261C8E79DCCBC1D5F8EFA104 (void);
-// 0x00000046 System.Void FlyPlayer/<BackToMain>d__19::.ctor(System.Int32)
-extern void U3CBackToMainU3Ed__19__ctor_m56DC88DC1FFFE25088A1002B2CEE4AB63810A516 (void);
-// 0x00000047 System.Void FlyPlayer/<BackToMain>d__19::System.IDisposable.Dispose()
-extern void U3CBackToMainU3Ed__19_System_IDisposable_Dispose_m25227D126133BE52DA6A06A6B8CF810652BF3357 (void);
-// 0x00000048 System.Boolean FlyPlayer/<BackToMain>d__19::MoveNext()
-extern void U3CBackToMainU3Ed__19_MoveNext_m28EB30277E673F8317C279E6B6425B5D8894157E (void);
-// 0x00000049 System.Object FlyPlayer/<BackToMain>d__19::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CBackToMainU3Ed__19_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA9C21DF346FAB124A59BA095C355298F3B37F7BA (void);
-// 0x0000004A System.Void FlyPlayer/<BackToMain>d__19::System.Collections.IEnumerator.Reset()
-extern void U3CBackToMainU3Ed__19_System_Collections_IEnumerator_Reset_m7B770513CEBBE1A84839DFCD8D9C59DB29A69751 (void);
-// 0x0000004B System.Object FlyPlayer/<BackToMain>d__19::System.Collections.IEnumerator.get_Current()
-extern void U3CBackToMainU3Ed__19_System_Collections_IEnumerator_get_Current_mAAEECE2515B3EBD682393DDF764ED47E524CB1A3 (void);
+// 0x0000003A System.Void FlyPlayer/<Rotate>d__20::.ctor(System.Int32)
+extern void U3CRotateU3Ed__20__ctor_mD0BF7FF3E55E249D4EA4067AF7E3BCA7054F4BFE (void);
+// 0x0000003B System.Void FlyPlayer/<Rotate>d__20::System.IDisposable.Dispose()
+extern void U3CRotateU3Ed__20_System_IDisposable_Dispose_m0C81C50109924897A993E376F8FAF30E7D488C40 (void);
+// 0x0000003C System.Boolean FlyPlayer/<Rotate>d__20::MoveNext()
+extern void U3CRotateU3Ed__20_MoveNext_mD4FFBD8689723201EF69447DEA450F887186FB2B (void);
+// 0x0000003D System.Object FlyPlayer/<Rotate>d__20::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CRotateU3Ed__20_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m50476279B55EA0630112433B20F857A3BDF18397 (void);
+// 0x0000003E System.Void FlyPlayer/<Rotate>d__20::System.Collections.IEnumerator.Reset()
+extern void U3CRotateU3Ed__20_System_Collections_IEnumerator_Reset_m2382116FA1E2A1C996392C9FBCA35179E9B34A02 (void);
+// 0x0000003F System.Object FlyPlayer/<Rotate>d__20::System.Collections.IEnumerator.get_Current()
+extern void U3CRotateU3Ed__20_System_Collections_IEnumerator_get_Current_mBB3F3DA8BC2D78558CFF61423F0CE1239EA947D1 (void);
+// 0x00000040 System.Void FlyPlayer/<AtackBlend>d__21::.ctor(System.Int32)
+extern void U3CAtackBlendU3Ed__21__ctor_m89A5295138BBA77564F694402408D2ACD3AAAEB9 (void);
+// 0x00000041 System.Void FlyPlayer/<AtackBlend>d__21::System.IDisposable.Dispose()
+extern void U3CAtackBlendU3Ed__21_System_IDisposable_Dispose_m3EB2737DE980626977487094A1A4B1C91985A5C7 (void);
+// 0x00000042 System.Boolean FlyPlayer/<AtackBlend>d__21::MoveNext()
+extern void U3CAtackBlendU3Ed__21_MoveNext_m5A11CEE274E8DA62D7CE4F3C9275F4BBF81B750F (void);
+// 0x00000043 System.Object FlyPlayer/<AtackBlend>d__21::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CAtackBlendU3Ed__21_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF50E4832537251B0CB8D7B8D8CC8E4FD36EE4BFC (void);
+// 0x00000044 System.Void FlyPlayer/<AtackBlend>d__21::System.Collections.IEnumerator.Reset()
+extern void U3CAtackBlendU3Ed__21_System_Collections_IEnumerator_Reset_m283C77564348BF612C3CBDB249AC2F38006CED3E (void);
+// 0x00000045 System.Object FlyPlayer/<AtackBlend>d__21::System.Collections.IEnumerator.get_Current()
+extern void U3CAtackBlendU3Ed__21_System_Collections_IEnumerator_get_Current_m8AAADF23DD712EB9A290FD6055A08EE76AE20A53 (void);
+// 0x00000046 System.Void FlyPlayer/<BackToMain>d__22::.ctor(System.Int32)
+extern void U3CBackToMainU3Ed__22__ctor_mAF4F944E2AD240BDBB1E46707B4265793D3141A6 (void);
+// 0x00000047 System.Void FlyPlayer/<BackToMain>d__22::System.IDisposable.Dispose()
+extern void U3CBackToMainU3Ed__22_System_IDisposable_Dispose_m2F7FC4A1F000213D22148C754A0872EEA026C304 (void);
+// 0x00000048 System.Boolean FlyPlayer/<BackToMain>d__22::MoveNext()
+extern void U3CBackToMainU3Ed__22_MoveNext_m1971FB43B24541487697131EFD46C380BF756A8D (void);
+// 0x00000049 System.Object FlyPlayer/<BackToMain>d__22::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CBackToMainU3Ed__22_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD26B4828A3513C4AB43F53B26A7A95AA955014D5 (void);
+// 0x0000004A System.Void FlyPlayer/<BackToMain>d__22::System.Collections.IEnumerator.Reset()
+extern void U3CBackToMainU3Ed__22_System_Collections_IEnumerator_Reset_m3E5520A45DAAA16B9DBA377E7F86B9A334CD5FCA (void);
+// 0x0000004B System.Object FlyPlayer/<BackToMain>d__22::System.Collections.IEnumerator.get_Current()
+extern void U3CBackToMainU3Ed__22_System_Collections_IEnumerator_get_Current_mDD7041E3291A6950BFE3B957BE0F80F0987D82C5 (void);
 // 0x0000004C System.Void FPSCalculator::Start()
 extern void FPSCalculator_Start_m7F7C666F3AD07098EFF74E2E831779C9E78025A9 (void);
 // 0x0000004D System.Void FPSCalculator::Update()
@@ -172,23 +172,25 @@ extern void FPSCalculator__ctor_mB0CC7EF55CB297845DC79FA6254B551E0288A45A (void)
 extern void MenuEngine_Start_m45E2B02620AC68E0758F5747FBC46E7AD5947ECB (void);
 // 0x00000050 System.Void MenuEngine::Update()
 extern void MenuEngine_Update_m717DBA7F268620BC2F3077A8C847F29E7BB563A3 (void);
-// 0x00000051 System.Void MenuEngine::initMainMenuScene()
+// 0x00000051 System.Void MenuEngine::setLevel(System.Int32)
+extern void MenuEngine_setLevel_m503DB74D5B4042724B3F701C057AFEECA8E0F07C (void);
+// 0x00000052 System.Void MenuEngine::initMainMenuScene()
 extern void MenuEngine_initMainMenuScene_mE54240EC90044DC9BE36D26E3DA0399C16F4594A (void);
-// 0x00000052 System.Void MenuEngine::initAuthorMenuScene()
+// 0x00000053 System.Void MenuEngine::initAuthorMenuScene()
 extern void MenuEngine_initAuthorMenuScene_mC9F58ECFD56C401A7C8B935C8204A58A0E9E4D00 (void);
-// 0x00000053 System.Void MenuEngine::initLeyendsMenuScene()
+// 0x00000054 System.Void MenuEngine::initLeyendsMenuScene()
 extern void MenuEngine_initLeyendsMenuScene_m03DCCC092BF4CB6000802272977E8DFFE0AC0504 (void);
-// 0x00000054 System.Void MenuEngine::initPlayersMenuScene()
+// 0x00000055 System.Void MenuEngine::initPlayersMenuScene()
 extern void MenuEngine_initPlayersMenuScene_mB45FCEAAE65A120EED7D80728BFFCDB7C23429C2 (void);
-// 0x00000055 System.Void MenuEngine::initBoboScene()
+// 0x00000056 System.Void MenuEngine::initBoboScene()
 extern void MenuEngine_initBoboScene_m4E0C83706F3A59FB1A0A8E1150F60F553BDDC99D (void);
-// 0x00000056 System.Void MenuEngine::initTucusitoScene()
+// 0x00000057 System.Void MenuEngine::initTucusitoScene()
 extern void MenuEngine_initTucusitoScene_m0730F2AF6AF6B0781562ADC12FE6B2E89541B957 (void);
-// 0x00000057 System.Void MenuEngine::doExitGame()
+// 0x00000058 System.Void MenuEngine::doExitGame()
 extern void MenuEngine_doExitGame_mFF6356246BA71BF2A9ACA8BE55DCB27C3062F1B9 (void);
-// 0x00000058 System.Void MenuEngine::.ctor()
+// 0x00000059 System.Void MenuEngine::.ctor()
 extern void MenuEngine__ctor_m4287345D4D41A52EDC7599F7F9CAAF4D6F765C8C (void);
-static Il2CppMethodPointer s_methodPointers[88] = 
+static Il2CppMethodPointer s_methodPointers[89] = 
 {
 	Estalactita_Start_mC40355C1F0E8C19812DB95830A8A9BF6F362DB9B,
 	Estalactita_Update_m8ADCE900ED80C926D09EA49EC1C29CF975FE3E68,
@@ -234,42 +236,43 @@ static Il2CppMethodPointer s_methodPointers[88] =
 	FlyCamera_UpdateInput_m74F5EF5EA4FACAB0BDCCBEFA853BEED37F68AE08,
 	FlyCamera_GetAccelerationVector_m4C33755E5AF6DF4B4ACA94B827C3F89397E803AA,
 	FlyCamera__ctor_mA8BB2240A203C34F7E1DF2B7C41AB8E047C2715B,
-	FlyCamera_U3CGetAccelerationVectorU3Eg__AddMovementU7C23_0_m8265C52EC23B5C2728A6F533B0FB08A6B24E16C6,
-	U3CBackToMainU3Ed__19__ctor_m2DF72BEEA73988EC111EE61FDDEA4EA81B40FF36,
-	U3CBackToMainU3Ed__19_System_IDisposable_Dispose_mC41EA63921590D4C34DAD371D9AFA7F34B226FBE,
-	U3CBackToMainU3Ed__19_MoveNext_mFFA61E48E64C3183F141A5C7D50C9B797F33605B,
-	U3CBackToMainU3Ed__19_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF6DA906110359B2D549F9CD02D19C54EB2F13F11,
-	U3CBackToMainU3Ed__19_System_Collections_IEnumerator_Reset_mCE0102205971B2668E2AE99A13E1BF72E8838644,
-	U3CBackToMainU3Ed__19_System_Collections_IEnumerator_get_Current_m4BB770327AD920712A1A9AB70F039D749AFA498A,
+	FlyCamera_U3CGetAccelerationVectorU3Eg__AddMovementU7C29_0_mD4DEAF45D289415DC9C85BBDD1722247F191DA76,
+	U3CBackToMainU3Ed__25__ctor_mB9D15F3D452DC9670CE7A808CF49103163B9CB58,
+	U3CBackToMainU3Ed__25_System_IDisposable_Dispose_m4C821EF0604041755C85690E4985EAF9C220C582,
+	U3CBackToMainU3Ed__25_MoveNext_mBC563F46B3B1EA48445CE0B2D6A9239EA6EE71BF,
+	U3CBackToMainU3Ed__25_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1703B0D91FF1022E0A370F1B112510CA7837AEC1,
+	U3CBackToMainU3Ed__25_System_Collections_IEnumerator_Reset_m3F36589A2B1D1F41A1E06F7F0423DA90A8B58E82,
+	U3CBackToMainU3Ed__25_System_Collections_IEnumerator_get_Current_m45987FF6ACF6C1D129C2EF7137D57388FA633FFE,
 	FlyPlayer_Start_m860B9BA04EEFC68DC70C08F3404B058A3B3B0AB1,
 	FlyPlayer_Rotate_m5DB1C58F4449A522FFBDC14C955D161DFC7CFEF0,
 	FlyPlayer_AtackBlend_m71135955D6893E056BFD851845D65FD0EF883DB4,
 	FlyPlayer_BackToMain_mC2E0E0DB1C3B9973E6023DF671D30AA7EF3E6905,
 	FlyPlayer_Update_m948447CEE8532C64E3987B318AEF7025E92765B5,
 	FlyPlayer__ctor_mB806033498E9C6495E2DD0AAFF388A4488DE3123,
-	U3CRotateU3Ed__17__ctor_mDAF3F976B605CE7812DC8183125D18C6B07A07EA,
-	U3CRotateU3Ed__17_System_IDisposable_Dispose_m4AD2DF82512DAB8AA97325C0B27037E59AC83CE4,
-	U3CRotateU3Ed__17_MoveNext_m57039920FB251879A70D6BC65E3B235ECD147E02,
-	U3CRotateU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m541A4595A90586C92CAFECDCC13663334C46581A,
-	U3CRotateU3Ed__17_System_Collections_IEnumerator_Reset_mD60966C8F1889861B3D99E5289BF7827A33A0338,
-	U3CRotateU3Ed__17_System_Collections_IEnumerator_get_Current_m0D8C44AB7B2DB77D6F712CBC429FEA0B3B2B8797,
-	U3CAtackBlendU3Ed__18__ctor_m4F2BF78C9651C2AE9A258756EDC5A7A133FCC398,
-	U3CAtackBlendU3Ed__18_System_IDisposable_Dispose_mDF955B3907CE008B39A0BF60ECC83105881440DE,
-	U3CAtackBlendU3Ed__18_MoveNext_m64E5F9E27BC70BB3481EFA5C18F0C6054FD098BC,
-	U3CAtackBlendU3Ed__18_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDF6446902DA808EE847DAFA21DDB8BFD5182631D,
-	U3CAtackBlendU3Ed__18_System_Collections_IEnumerator_Reset_m306E1CABBEFCD4FF0F4F3ECE3E5A127264C12EBA,
-	U3CAtackBlendU3Ed__18_System_Collections_IEnumerator_get_Current_mBC5E84D9CF5AA765261C8E79DCCBC1D5F8EFA104,
-	U3CBackToMainU3Ed__19__ctor_m56DC88DC1FFFE25088A1002B2CEE4AB63810A516,
-	U3CBackToMainU3Ed__19_System_IDisposable_Dispose_m25227D126133BE52DA6A06A6B8CF810652BF3357,
-	U3CBackToMainU3Ed__19_MoveNext_m28EB30277E673F8317C279E6B6425B5D8894157E,
-	U3CBackToMainU3Ed__19_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA9C21DF346FAB124A59BA095C355298F3B37F7BA,
-	U3CBackToMainU3Ed__19_System_Collections_IEnumerator_Reset_m7B770513CEBBE1A84839DFCD8D9C59DB29A69751,
-	U3CBackToMainU3Ed__19_System_Collections_IEnumerator_get_Current_mAAEECE2515B3EBD682393DDF764ED47E524CB1A3,
+	U3CRotateU3Ed__20__ctor_mD0BF7FF3E55E249D4EA4067AF7E3BCA7054F4BFE,
+	U3CRotateU3Ed__20_System_IDisposable_Dispose_m0C81C50109924897A993E376F8FAF30E7D488C40,
+	U3CRotateU3Ed__20_MoveNext_mD4FFBD8689723201EF69447DEA450F887186FB2B,
+	U3CRotateU3Ed__20_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m50476279B55EA0630112433B20F857A3BDF18397,
+	U3CRotateU3Ed__20_System_Collections_IEnumerator_Reset_m2382116FA1E2A1C996392C9FBCA35179E9B34A02,
+	U3CRotateU3Ed__20_System_Collections_IEnumerator_get_Current_mBB3F3DA8BC2D78558CFF61423F0CE1239EA947D1,
+	U3CAtackBlendU3Ed__21__ctor_m89A5295138BBA77564F694402408D2ACD3AAAEB9,
+	U3CAtackBlendU3Ed__21_System_IDisposable_Dispose_m3EB2737DE980626977487094A1A4B1C91985A5C7,
+	U3CAtackBlendU3Ed__21_MoveNext_m5A11CEE274E8DA62D7CE4F3C9275F4BBF81B750F,
+	U3CAtackBlendU3Ed__21_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF50E4832537251B0CB8D7B8D8CC8E4FD36EE4BFC,
+	U3CAtackBlendU3Ed__21_System_Collections_IEnumerator_Reset_m283C77564348BF612C3CBDB249AC2F38006CED3E,
+	U3CAtackBlendU3Ed__21_System_Collections_IEnumerator_get_Current_m8AAADF23DD712EB9A290FD6055A08EE76AE20A53,
+	U3CBackToMainU3Ed__22__ctor_mAF4F944E2AD240BDBB1E46707B4265793D3141A6,
+	U3CBackToMainU3Ed__22_System_IDisposable_Dispose_m2F7FC4A1F000213D22148C754A0872EEA026C304,
+	U3CBackToMainU3Ed__22_MoveNext_m1971FB43B24541487697131EFD46C380BF756A8D,
+	U3CBackToMainU3Ed__22_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD26B4828A3513C4AB43F53B26A7A95AA955014D5,
+	U3CBackToMainU3Ed__22_System_Collections_IEnumerator_Reset_m3E5520A45DAAA16B9DBA377E7F86B9A334CD5FCA,
+	U3CBackToMainU3Ed__22_System_Collections_IEnumerator_get_Current_mDD7041E3291A6950BFE3B957BE0F80F0987D82C5,
 	FPSCalculator_Start_m7F7C666F3AD07098EFF74E2E831779C9E78025A9,
 	FPSCalculator_Update_m87E13FBF77EC1078F5984274CC73FB8902FD7011,
 	FPSCalculator__ctor_mB0CC7EF55CB297845DC79FA6254B551E0288A45A,
 	MenuEngine_Start_m45E2B02620AC68E0758F5747FBC46E7AD5947ECB,
 	MenuEngine_Update_m717DBA7F268620BC2F3077A8C847F29E7BB563A3,
+	MenuEngine_setLevel_m503DB74D5B4042724B3F701C057AFEECA8E0F07C,
 	MenuEngine_initMainMenuScene_mE54240EC90044DC9BE36D26E3DA0399C16F4594A,
 	MenuEngine_initAuthorMenuScene_mC9F58ECFD56C401A7C8B935C8204A58A0E9E4D00,
 	MenuEngine_initLeyendsMenuScene_m03DCCC092BF4CB6000802272977E8DFFE0AC0504,
@@ -279,7 +282,7 @@ static Il2CppMethodPointer s_methodPointers[88] =
 	MenuEngine_doExitGame_mFF6356246BA71BF2A9ACA8BE55DCB27C3062F1B9,
 	MenuEngine__ctor_m4287345D4D41A52EDC7599F7F9CAAF4D6F765C8C,
 };
-static const int32_t s_InvokerIndices[88] = 
+static const int32_t s_InvokerIndices[89] = 
 {
 	3419,
 	3419,
@@ -361,6 +364,7 @@ static const int32_t s_InvokerIndices[88] =
 	3419,
 	3419,
 	3419,
+	2774,
 	3419,
 	3419,
 	3419,
@@ -374,7 +378,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	88,
+	89,
 	s_methodPointers,
 	0,
 	NULL,

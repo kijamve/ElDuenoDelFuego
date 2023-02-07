@@ -83,8 +83,8 @@ public class EnemyPlayer : MonoBehaviour
             bool playerDead = obj.dead;
             audioAttack.Play();
             float distance = Math.Abs(player.transform.position.x - gameObject.transform.position.x);
-            Debug.Log("Distance: " + distance);
-            if (distance < 23.0f)
+            Debug.Log("Distance Attack Caiman: " + distance);
+            if (distance < 40.0f)
             {
                 audioPlayerDead.Play();
                 obj.addDanger(dangerLevelToEnemy);
@@ -146,22 +146,30 @@ public class EnemyPlayer : MonoBehaviour
         bool playerDead = player.GetComponent<FlyCamera>().dead;
 
         nextAttack -= Time.deltaTime;
-        if (!playerDead && nextAttack <= 0.0f)
-        {
-            if(distance > fireMinDistance && distance < fireMaxDistance)
+
+        if (!playerDead && nextAttack <= 0.0f) {
+            if (distance > fireMinDistance && distance < fireMaxDistance)
             {
                 initFire(true);
-            } else if (isForward && distance <= fireMinDistance)
-            {
+            } else if (isForward && distance <= fireMinDistance) {
                 initFire(false);
             }
-            nextAttack = Random.Range(2.0f, 3.5f);
+            float minTimeAttack = PlayerPrefs.GetFloat("minTimeAttack");
+            float maxTimeAttack = PlayerPrefs.GetFloat("maxTimeAttack");
+            if (minTimeAttack < 0.01f)
+            {
+                minTimeAttack = 2.0f;
+            }
+            if (minTimeAttack > maxTimeAttack || maxTimeAttack < 0.01f)
+            {
+                maxTimeAttack = minTimeAttack + 1.5f;
+            }
+            nextAttack = Random.Range(minTimeAttack, maxTimeAttack);
         }
-        if (!isForward || distance > fireMaxDistance)
-        {
+
+        if (!isForward || distance > fireMaxDistance) {
             initWalk(isForward);
-        } else
-        {
+        } else {
             body.velocity = new Vector3(0.0f, 0.0f, 0.0f);
             animator.SetBool("isWalk", false);
         }

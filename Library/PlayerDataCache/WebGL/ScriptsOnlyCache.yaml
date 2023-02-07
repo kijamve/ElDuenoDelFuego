@@ -18,13 +18,14 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    Unity.Timeline.Editor.dll:
+    - TimelineProjectSettings
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
     - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateMachineNode
     - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
@@ -73,6 +74,9 @@ ScriptsOnlyBuild:
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: MenuEngine
+    methodName: setLevel
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuEngine
     methodName: initTucusitoScene
   - assembly: Assembly-CSharp
     fullTypeName: MenuEngine
@@ -85,10 +89,25 @@ ScriptsOnlyBuild:
     methodName: doExitGame
   - assembly: Assembly-CSharp
     fullTypeName: MenuEngine
+    methodName: setLevel
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuEngine
+    methodName: setLevel
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuEngine
+    methodName: setLevel
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuEngine
+    methodName: setLevel
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuEngine
     methodName: initMainMenuScene
   - assembly: Assembly-CSharp
     fullTypeName: MenuEngine
     methodName: initLeyendsMenuScene
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuEngine
+    methodName: setLevel
   - assembly: Assembly-CSharp
     fullTypeName: MenuEngine
     methodName: initMainMenuScene
@@ -1064,7 +1083,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 1df5fdb879b03c61e1dbed4a5ccd6709
+      Hash: 0e8589229ae210b3805e7bcf9f46cad4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MenuEngine
